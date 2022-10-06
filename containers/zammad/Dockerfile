@@ -7,7 +7,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 
 ENV GIT_BRANCH stable
 ENV GIT_URL ${PROJECT_URL}.git
-ENV PROJECT_URL https://github.com/zammad/zammad
+ENV PROJECT_URL https://github.com/mccormicktmi/zammad
 ENV RAILS_ENV production
 ENV RAILS_LOG_TO_STDOUT true
 ENV TAR_GZ_URL ${PROJECT_URL}/archive/${GIT_BRANCH}.tar.gz
@@ -30,13 +30,13 @@ ARG BUILD_DATE
 ARG DEBIAN_FRONTEND=noninteractive
 
 LABEL org.label-schema.build-date="$BUILD_DATE" \
-      org.label-schema.name="Zammad" \
+      org.label-schema.name="MalTwo" \
       org.label-schema.license="AGPL-3.0" \
-      org.label-schema.description="Docker container for Zammad - Data Container" \
-      org.label-schema.url="https://zammad.org" \
+      org.label-schema.description="Mal 2.0 for use by Loadtrek Team" \
+      org.label-schema.url="https://maltwo.mccormicktrucking.us" \
       org.label-schema.vcs-url="https://github.com/zammad/zammad" \
       org.label-schema.vcs-type="Git" \
-      org.label-schema.vendor="Zammad" \
+      org.label-schema.vendor="McCormick Trucking Inc" \
       org.label-schema.schema-version="5.2.1" \
       org.label-schema.docker.cmd="sysctl -w vm.max_map_count=262144;docker-compose up"
 
